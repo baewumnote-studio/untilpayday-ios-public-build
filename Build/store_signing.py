@@ -249,10 +249,9 @@ def check_native(path, config, number):
         check_info(plistlib.loads((target / 'Info.plist').read_bytes()), bundle, config, number, main=index == 0)
         subprocess.run(['codesign', '--verify', '--deep', '--strict', str(target)], check=True, capture_output=True)
         with tempfile.TemporaryDirectory() as cert_folder:
-            prefix = str(Path(cert_folder) / 'signer')
-            subprocess.run(['codesign', '-d', '--extract-certificates', prefix, str(target)],
-                           capture_output=True, check=True)
-            check_certificate(Path(prefix + '0').read_bytes(), config)
+            subprocess.run(['codesign', '-d', '--extract-certificates', str(target)],
+                           cwd=cert_folder, capture_output=True, check=True)
+            check_certificate((Path(cert_folder) / 'codesign0').read_bytes(), config)
         result = subprocess.run(['codesign', '-d', '--entitlements', '-', '--xml', str(target)],
                                 capture_output=True, check=True)
         output = result.stdout + result.stderr
@@ -292,6 +291,8 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except (OSError, ValueError, KeyError, subprocess.SubprocessError, zipfile.BadZipFile):
-        print('UntilPayday signing verification failed; check identity, both profiles and the existing certificate.', file=sys.stderr)
+    except (OSError, ValueError, KeyError, subprocess.SubprocessError, zipfile.BadZipFile) as error:
+        import traceback
+        phase = traceback.extract_tb(error.__traceback__)[-1].name
+        print('UntilPayday signing verification failed: ' + type(error).__name__ + ' in ' + phase + '; credential values are not logged.', file=sys.stderr)
         raise SystemExit(1)
