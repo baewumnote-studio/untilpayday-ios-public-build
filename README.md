@@ -6,8 +6,12 @@ no Dart source, pubspec, CocoaPods dependency, Flutter analyze or Flutter test s
 Dependencies are resolved by Swift Package Manager.
 
 The private original repository and its Git history are preserved separately.
-`PUBLIC_SOURCE_MANIFEST.json` records the 84 unchanged source, test, core and app
-asset files selected from the reviewed original. No software license was added.
+`PUBLIC_SOURCE_MANIFEST.json` preserves the original baseline of 84 source, test,
+core and app asset files. `Build/approved_source_changes.json` records three
+specific owner-approved release changes: the hosted privacy footer/link, its
+English localization key, and an explicit non-personalized interstitial request.
+The other 81 files remain byte-identical to the original. Both records are hash
+pinned in the source verification script. No software license was added.
 Public visibility does not itself establish a license to reuse the source or assets.
 
 ## Build and verification

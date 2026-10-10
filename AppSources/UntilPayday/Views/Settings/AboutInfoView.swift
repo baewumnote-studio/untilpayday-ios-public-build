@@ -96,9 +96,11 @@ struct AboutInfoView: View {
                 "You can erase locally stored budgeting data from Settings using Reset all data."
             )
 
-            Text("A hosted privacy-policy URL is still required before App Store release. The hosted version must match this behavior and the final advertising configuration.")
-                .font(.footnote)
-                .foregroundStyle(AppColor.textSecondary)
+            if let url = URL(string: "https://baewumnote-studio.github.io/untilpayday/privacy.html") {
+                Link("Read the full privacy policy on our website.", destination: url)
+                    .font(.footnote)
+                    .foregroundStyle(AppColor.textSecondary)
+            }
         }
     }
 

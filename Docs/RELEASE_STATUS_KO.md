@@ -1,60 +1,52 @@
 # UntilPayday / Payday Left 실제 출시 준비 기록
 
-기준일: 2026-10-10. 현재 준비 단계이며 새 저장소의 공개 전환과 새 App Store 앱 생성은 아직 승인·실행되지 않았습니다.
+기준일: 2026-10-10. App Store 1.0(2) 테스트 광고 빌드는 서명·비공개 보관·Apple 업로드와 Apple 처리를 완료했습니다. 이 기록에 포함된 승인된 최종 소스 변경은 실제 iOS 재검증 전입니다. 사용자는 기존 실기기 테스트 결과를 기준으로 심사 제출을 요청했으며, 필수 출시 준비 후 제출할 예정입니다.
 
-## 구현과 보존
+## 현재 결과
 
-- 원본은 Flutter가 아닌 SwiftUI·SwiftData·WidgetKit 네이티브 iOS 앱입니다.
-- 앱/공유/위젯/테스트/Core 소스 및 필수 자산 84개를 원본과 바이트 단위로 동일하게 복사했습니다.
-- 기존 계산, 문구, 화면, 위젯 구현을 변경하지 않았습니다.
-- 새 작업본의 변경은 등록된 Bundle ID·App Group 연결과 독립적인 빌드·서명·검증 구성입니다.
-- 기존 비공개 저장소의 소스, 커밋 이력, 브랜치, 태그는 변경하지 않았습니다.
-- 새 저장소에 기존 Git 이력을 복사하거나 새 라이선스를 추가하지 않았습니다.
+| 항목 | 실제 결과 |
+|---|---|
+| 원본 비공개 저장소 | 기존 소스·커밋·브랜치·태그 보존 |
+| 기존 코드 재활용 | 원본 84개 기준 목록 보존; 81개 동일, 아래 승인된 3개 최소 변경 |
+| 기존 테스트 | 직전 검증 소스 6d0ee76의 Core 33 / Unit 27 / UI 12 / 배포 검사 24 통과, 실패·건너뛰기 없음; 최종 변경본은 재검증 전 |
+| 홈 위젯 | 실제 Simulator Small 위젯 데이터 공유·금액 갱신·Today 열기 통과; Medium·잠금 위젯 실동작 추가 확인 필요 |
+| 공개 안전성 검사 | 소스·자산 선별 공개; 비밀 키·실기기 번호·서명 파일·실제 예산 기록 제외 |
+| 신규 공개용 저장소 | 독립적인 공개 저장소; 원본 Git 이력 복사·Fork·Mirror·새 라이선스 없음 |
+| GitHub Actions | 무료 표준 macOS 수동 실행; Linux 우선 검사; 서명은 소유자 승인 보호 Environment |
+| Flutter analyze | 해당 없음 — 실제 SwiftUI 프로젝트 |
+| Flutter test | 해당 없음 — 기존 Swift Core/XCTest/UI 테스트 실행 |
+| iOS Release 빌드 | Xcode 27.0 / iOS SDK 27 앱·위젯 컴파일 및 1.0(2) Archive/Export 성공 |
+| 메인 앱 및 위젯 서명 | 기존 인증서·각 App Store 프로파일 확인; 다운로드한 IPA와 원본 archive의 두 대상 CMS·페이지·메타데이터·권한 검사 통과 |
+| IPA 생성 | 1.0(2) 테스트 광고 IPA 및 원본 xcarchive를 기존 비공개 저장소의 미게시 draft Release에 보관; 공개 서명 아티팩트 0개 |
+| App Store Connect | Payday Left 6821234126 생성; Finance·1.0·4+·무료 가격·설명·URL·실제 화면 5장·심사 연락처 저장 |
+| TestFlight | 1.0(2) Apple 처리 완료 및 수출 규정 답변 저장; 내부 그룹 생성, 설치 확인은 별도 필요 |
+| 실제 iPhone QA | 기존 1.0(1) Ad Hoc 설치·실행·지출/Today·홈 위젯 갱신/탭·재실행 보존·오프라인 지출 저장·다크모드 앱/위젯 사용자 정상 확인; 확인 범위 밖의 항목은 미확인; 사용자는 기존 실기기 결과를 기준으로 심사 제출 요청 |
+| App Store 심사 | 미제출; 최종 소스/운영 광고 빌드·동의 및 개인정보 공개 답변·필수 출시 준비 완료 후 사용자 요청에 따라 심사 제출 예정 |
 
-## 과거에 실제 완료한 결과
+## 승인된 변경과 이유
 
-| 항목 | 확인한 결과 | 한계 |
-|---|---|---|
-| 10월 8일 Core | 33개 통과 | 새 공개 빌드에서 재실행 전 |
-| 10월 8일 iOS Unit | 27개 통과 | 새 공개 빌드에서 재실행 전 |
-| 10월 8일 iOS UI | 12개 통과 | 새 공개 빌드에서 재실행 전 |
-| Simulator | 실제 앱 화면 6장, Small 홈 위젯 금액 갱신·앱 이동 통과 | Medium/잠금화면 실동작 미확인 |
-| 10월 9일 iPhone Ad Hoc | Xcode 27.0, iOS 27 SDK, 본체+위젯 Release 서명·IPA·원본 archive 생성 | App Store 배포 프로파일과 별도 |
-| 실기기 | 설치/실행, 지출 저장 후 Today 갱신, 홈 위젯 금액 일치·탭 이동 사용자 확인 | 전체 출시 QA 완료로 판단하지 않음 |
+- `AppSources/UntilPayday/Views/Settings/AboutInfoView.swift`: 출시 준비용 Privacy 문장만 “Read the full privacy policy on our website.”와 실제 정책 링크로 교체. 기존 글자 스타일 유지.
+- `AppSources/UntilPayday/Resources/Localizable.xcstrings`: 해당 영어 문장 키만 교체.
+- `AppSources/UntilPayday/Services/AdManager.swift`: 기존 전면 광고 요청에 `npa=1`을 명시. 기존 광고 시점·횟수 제한·UMP 동의와 초기화 설정 유지. Google은 기존 PPT 설정이 개인 맞춤 광고를 끄지만 제3자 광고 추적까지 제한하지 않는다고 안내합니다.
+- `Build/verify_source.py`, `Build/approved_source_changes.json`, 이 문서와 README: 원본 해시 기준을 보존하고 승인된 세 변경만 별도로 검증·기록.
+- 이전 `Build/store_signing.py` 수정: Apple codesign의 기본 인증서 추출 방식을 임시 작업 폴더에서 사용하도록 최소 수정. 실제 재시도에서 엄격한 서명·기존 인증서 검사를 통과했습니다.
+- 등록된 Bundle ID·App Group 조립 연결: `Config/AppInfo.plist`, `Config/WidgetInfo.plist`, 본체·위젯 entitlements, `project.yml`, Xcode project. 계산·기능·아이콘·위젯 디자인 변경 없음.
 
-## 새 구성의 실행 순서
+원본 기준 목록을 새 파일 해시로 덮어쓰지 않습니다. 비공개 원본 저장소는 변경하지 않습니다.
 
-1. 공개할 파일 목록과 안전성 검사 결과를 소유자가 검토하고 신규 저장소 공개를 승인합니다.
-2. 수동 `ios-build.yml`을 한 번 실행합니다. Linux 원본 handoff/Core 검사가 통과해야 Mac에서 unsigned iPhone Release·Unit·UI·Simulator·홈 위젯 검사가 시작됩니다.
-3. 새 App Store 앱 생성 정보를 확인받고 등록합니다. 메인 Bundle ID는 기존 등록값을 유지합니다.
-4. 공개 저장소의 `app-store` Environment에 소유자 필수 승인과 main 브랜치 제한을 적용합니다. 승인 후에만 배포용 비밀 자료를 등록합니다.
-5. 기존 Distribution 인증서에 맞는 App Store 본체/위젯 프로파일을 각각 준비합니다. Ad Hoc 프로파일을 대신 사용하지 않습니다.
-6. 성공한 unsigned 검증과 동일한 커밋을 수동 `ios-release.yml`로 서명하고 Apple에 직접 업로드합니다. 외부 PR은 배포용 비밀 자료에 접근하지 못합니다.
-7. 서명 IPA·원본 xcarchive는 승인된 기존 비공개 저장소의 비공개 draft Release에 보관합니다. 공개 저장소에는 서명 파일 아티팩트를 만들지 않습니다. 기존 소스나 커밋은 바꾸지 않습니다.
-8. Apple 처리 상태와 TestFlight 설치 가능 여부를 따로 확인합니다. 업로드 명령 성공만으로 처리 완료를 선언하지 않습니다.
-9. 실기기 QA와 아래 출시 값을 확인한 뒤 최종 심사 제출 승인을 받습니다. 워크플로에는 심사 제출·자동 출시가 없습니다.
+## 실제 실행 기록
 
-## 아직 필요한 실제 출시 값과 확인
+- 수정 전 최초 서명 검사 오류: https://github.com/baewumnote-studio/untilpayday-ios-public-build/actions/runs/38023491884
+- 최소 서명 검사 수정 후 실제 iOS 검증 성공: https://github.com/baewumnote-studio/untilpayday-ios-public-build/actions/runs/38025252917
+- 실제 앱/위젯 서명·Export·비공개 보관·Apple 업로드 성공: https://github.com/baewumnote-studio/untilpayday-ios-public-build/actions/runs/38026556337
+- 워크플로: `.github/workflows/ios-build.yml`, `.github/workflows/ios-release.yml`.
 
-- App Store 앱 생성 승인 및 생성 후 숫자 App ID.
-- 이 앱 전용 운영 AdMob App ID/광고 단위와 UMP 메시지·지역 동의 설정. 테스트 모드의 TestFlight 빌드는 정식 심사 후보로 사용하지 않습니다.
-- 실제 앱 안내 마케팅 URL, 지원 URL, 개인정보처리방침 URL.
-- 개발자 사이트 루트 `/app-ads.txt`의 실제 AdMob 게시자 스니펫, 공개 HTTP 응답·크롤러 접근 확인. 마케팅 URL은 파일 주소가 아닌 앱 안내 페이지로 입력합니다.
-- 최종 archive의 Google SDK 버전/개인정보 매니페스트·실제 동작에 맞는 App Privacy/ATT 답변. 광고 SDK가 있으므로 앱 전체를 ‘수집 없음’으로 단정하지 않습니다.
-- 실제 iPhone의 재실행 데이터 유지, 날짜 경계, 급여 주기, 오프라인, 다크모드, 알림/동의, Medium/잠금 위젯, 성능 QA.
-- 최신 실제 캡처 6장의 App Store 화면 크기 규격 검증, 연령 등급, 지원 연락처, 심사 메모.
-- Apple 계정의 TestFlight 문제는 직접 설치 성공과 별개이며 새 업로드 후 실제 상태로 확인합니다.
+## 남은 출시 확인
 
-Flutter analyze/test/pub get, Dart SDK 및 CocoaPods는 이 프로젝트에 해당하지 않습니다. 실행하거나 성공했다고 보고하지 않습니다.
-
-## 실기기 남은 QA 절차
-
-실제 개인정보 대신 가상 금액으로 확인합니다. 기존 사용 데이터를 삭제하지 말고 필요하면 먼저 기록을 보관합니다.
-
-1. 최근 저장 금액을 기록한 뒤 앱을 완전히 종료·재실행하고 동일한 값과 지출 내역이 남는지 확인합니다.
-2. 기존 급여일·예약 청구·보호 금액을 확인하고, 동일한 지출이 Today와 위젯에 반영되는지 확인합니다.
-3. 앱을 백그라운드에 둔 뒤 복귀하고 오프라인에서도 금액/내역을 확인합니다.
-4. 다크모드와 큰 글자에서 주요 화면의 문구·금액·입력 버튼이 잘 보이는지 확인합니다.
-5. Medium 홈 위젯과 잠금화면 위젯을 추가하고 금액·앱 이동을 확인합니다. 날짜가 바뀐 뒤 앱과 위젯의 날짜/금액을 비교합니다.
-6. 알림은 사용자가 허용한 상태에서 실제 도착을 확인합니다. 광고·개인정보 선택은 해당 지역의 실제 UMP 화면과 설정 진입을 확인합니다.
-7. 오류가 있으면 화면/정확한 문구/발생 순서를 기록합니다. 테스트 실패 때문에 기존 데이터나 앱을 자동 삭제하지 않습니다.
+- 승인된 최종 소스 변경의 실제 iOS SDK 컴파일·기존 테스트·Simulator 캡처 재검증.
+- 앱 전용 운영 AdMob ID는 준비했으며 현재 1.0(2)는 테스트 광고입니다. 최종 운영 빌드는 별도로 서명·보관·업로드해야 합니다.
+- EU/US 앱 전용 UMP 동의 메시지는 초안입니다. 최종 광고 설정과 실제 지역별 동작을 확인하고 적용해야 합니다.
+- 최종 archive의 SDK 개인정보 정보와 실제 광고 설정에 맞는 App Privacy 목적·연결·추적 답변을 완료해야 합니다. SDK가 있으므로 앱 전체를 ‘수집 없음’으로 답하지 않습니다.
+- 마케팅 URL은 실제 앱 안내 페이지입니다. https://baewumnote-studio.github.io/untilpayday/ 및 지원·정책 페이지 HTTP 200을 확인했습니다. 사이트 루트 app-ads.txt의 정확한 게시자 스니펫과 크롤러 응답을 확인했습니다. 공개 Store 정보 연결과 AdMob 준비 상태 심사는 출시 후 별도 단계입니다.
+- 급여 주기·청구 처리·날짜 경계, 큰 글자, Medium/잠금 위젯, 알림·동의·광고의 전체 실기기 확인은 기록된 범위 밖입니다. 사용자는 이미 확인한 실기기 결과를 기준으로 심사를 요청했으므로 추가 내부 테스터 초대와 반복 설치를 심사 준비의 필수 단계로 요구하지 않습니다.
+- App Store 심사 제출은 사용자 요청에 따라 필수 준비 후 진행할 예정입니다. 심사 승인 후 수동 출시는 별도 단계입니다.

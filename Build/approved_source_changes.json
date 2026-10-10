@@ -1,0 +1,34 @@
+{
+  "baselineSourceCommit": "662dc862f0ace4de1baba53114ca6b0cffd3213f",
+  "baselineInventoryUnchanged": true,
+  "approvedSourceChanges": [
+    {
+      "path": "AppSources/UntilPayday/Views/Settings/AboutInfoView.swift",
+      "originalSha256": "2c66d480e5e21f231e167b930b8b2a69e47ab6534e165e97c727665cbc8c16f1",
+      "sha256": "030a74b24556cb05e29153e1298aa329eb812fa1f02ffaa87948874bb1221c6d",
+      "bytes": 4209,
+      "reason": "Replace only the release-preparation footer with the approved hosted privacy-policy sentence and link.",
+      "ownerApprovalDateKorea": "2026-10-10",
+      "ownerAnswer": "해당 문장과 정책 링크만 수정 승인"
+    },
+    {
+      "path": "AppSources/UntilPayday/Resources/Localizable.xcstrings",
+      "originalSha256": "362e1aff8d766fba5f6c773bde8c065ab33244b5a66274b27adcf580797ec7d4",
+      "sha256": "9a29afb5b16c6868a18d96d6c6500929a53813861bea125c65a5ab77c121fe1b",
+      "bytes": 11016,
+      "reason": "Replace only the corresponding English localization key for the approved privacy footer.",
+      "ownerApprovalDateKorea": "2026-10-10",
+      "ownerAnswer": "해당 문장과 정책 링크만 수정 승인"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/AdManager.swift",
+      "originalSha256": "c50c21a55f6c4b5eead10d51c2fa40f7c3efa293699f1629ae011c5fab146e1b",
+      "sha256": "26f5bdbe2c9596494b56dfe23510c00c11adf07e9f9a94b45606f6f4d01ec6b9",
+      "bytes": 2447,
+      "reason": "Add npa=1 to the existing interstitial request to explicitly request non-personalized ads; preserve consent gating, frequency and triggers.",
+      "ownerApprovalDateKorea": "2026-10-10",
+      "ownerAnswer": "비개인화 요청 설정 추가 승인"
+    }
+  ],
+  "calculationFeaturesDesignOtherCopyUnchanged": true
+}

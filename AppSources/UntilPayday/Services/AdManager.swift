@@ -32,7 +32,11 @@ final class AdManager: NSObject, ObservableObject {
         #if canImport(GoogleMobileAds)
         guard interstitial == nil, !AdConfig.interstitialUnitID.isEmpty else { return }
         do {
-            let ad = try await InterstitialAd.load(with: AdConfig.interstitialUnitID, request: Request())
+            let request = Request()
+            let extras = Extras()
+            extras.additionalParameters = ["npa": "1"]
+            request.register(extras)
+            let ad = try await InterstitialAd.load(with: AdConfig.interstitialUnitID, request: request)
             ad.fullScreenContentDelegate = self
             interstitial = ad
         } catch {
