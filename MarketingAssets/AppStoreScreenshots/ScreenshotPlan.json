@@ -1,0 +1,50 @@
+{
+  "canvas": [
+    1206,
+    2622
+  ],
+  "items": [
+    {
+      "output": "01_Today.png",
+      "source": "01_today.png",
+      "title": "Know what’s safe to spend today.",
+      "subtitle": "See your money, days left, and today’s safe amount at a glance.",
+      "background": "#EAF4FF"
+    },
+    {
+      "output": "02_PaySchedule.png",
+      "source": "02_pay_schedule.png",
+      "title": "Budget by paycheck. Not by calendar month.",
+      "subtitle": "Choose the pay schedule that fits your life.",
+      "background": "#FFF1E8"
+    },
+    {
+      "output": "03_Plan.png",
+      "source": "03_plan.png",
+      "title": "Bills are covered before you spend.",
+      "subtitle": "Add upcoming bills so they’re already accounted for.",
+      "background": "#EAFBF2"
+    },
+    {
+      "output": "04_ScheduleOptions.png",
+      "source": "04_schedule_options.png",
+      "title": "Weekly. Biweekly. Twice monthly. Monthly.",
+      "subtitle": "Flexible options for the way you actually get paid.",
+      "background": "#F1EEFF"
+    },
+    {
+      "output": "05_Widgets.png",
+      "source": "05_widgets.png",
+      "title": "Your budget at a glance.",
+      "subtitle": "Check Safe Today from your Home Screen or Lock Screen.",
+      "background": "#E8F4FF"
+    },
+    {
+      "output": "06_Privacy.png",
+      "source": "06_privacy.png",
+      "title": "No bank login. No account.",
+      "subtitle": "Your budget records stay on your device.",
+      "background": "#FFF1E8"
+    }
+  ]
+}

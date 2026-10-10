@@ -1,0 +1,14 @@
+{
+  "status": "PREPARED_NOT_CREATED_OWNER_CONFIRMATION_REQUIRED",
+  "platform": "IOS",
+  "name": "Payday Left",
+  "bundleID": "com.baewumnote.untilpayday",
+  "sku": "untilpayday-ios",
+  "primaryLocale": "en-US",
+  "category": "FINANCE",
+  "teamID": "39762JRYD4",
+  "version": "1.0",
+  "nextBuildNumber": "2",
+  "nameAvailability": "Not yet confirmed by final Apple creation",
+  "matchingExistingAppRecordsAtReadOnlyCheck": 0
+}

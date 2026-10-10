@@ -1,0 +1,5 @@
+cryptography==50.0.2
+PyYAML==6.0.3
+Pillow==12.0.0
+openstep-parser==2.0.3
+

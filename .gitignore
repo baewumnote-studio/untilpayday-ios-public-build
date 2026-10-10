@@ -1,0 +1,25 @@
+# Local data, credentials and signed delivery files must never be committed.
+.DS_Store
+__pycache__/
+*.pyc
+.build/
+DerivedData/
+SourcePackages/
+xcuserdata/
+*.xcuserstate
+AssemblyVerification/
+Build/local/
+Release/local/
+.env
+.env.*
+*.p12
+*.p8
+*.pem
+*.key
+*.mobileprovision
+*.ipa
+*.xcarchive/
+*.xcarchive.tar.gz
+*.sqlite*
+*.db
+

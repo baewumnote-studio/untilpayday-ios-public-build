@@ -1,0 +1,1781 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"49652A13D58AD96B1B4F9E2F" = {
+			"isa" = "XCLocalSwiftPackageReference";
+			"relativePath" = "CorePackage";
+		};
+		"616AA74BC973F36D3639860B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder";
+			"path" = "CorePackage";
+			"sourceTree" = "<group>";
+		};
+		"8D9B57A96758071C65350C25" = {
+			"isa" = "XCRemoteSwiftPackageReference";
+			"repositoryURL" = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			"requirement" = {
+				"kind" = "upToNextMajorVersion";
+				"minimumVersion" = "13.11.0";
+			};
+		};
+		"A5A54C007ADCB895B9E4300F" = {
+			"isa" = "XCRemoteSwiftPackageReference";
+			"repositoryURL" = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
+			"requirement" = {
+				"kind" = "upToNextMajorVersion";
+				"minimumVersion" = "3.1.0";
+			};
+		};
+		"1B6DF7973E305F7756B13025" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "UntilPayday.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"D41F036A010A19210D5E8D37" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"includeInIndex" = "0";
+			"path" = "UntilPaydayWidget.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"C36117A36B1388651336FB0D" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "UntilPaydayTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"C5887C8CBF990C5324A5E1FE" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "UntilPaydayUITests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"6E273A96616329E7117AD3EA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "CurrencyRules.swift";
+			"sourceTree" = "<group>";
+		};
+		"D7CCF1DFD4BBDBB67C9C32A9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6E273A96616329E7117AD3EA;
+		};
+		"630EB015D3B89CF8B765BC1A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WidgetBudgetCalculator.swift";
+			"sourceTree" = "<group>";
+		};
+		"27565A3DABF1CC288F041304" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 630EB015D3B89CF8B765BC1A;
+		};
+		"7E0D33D155EEA2E8F0AE46B6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WidgetShared.swift";
+			"sourceTree" = "<group>";
+		};
+		"73003367081B6A690E8FE98F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 7E0D33D155EEA2E8F0AE46B6;
+		};
+		"F7ADAE73BBF9A94DDEDC6227" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AppBrand.swift";
+			"sourceTree" = "<group>";
+		};
+		"2DD8694D3931CE46129E6350" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = F7ADAE73BBF9A94DDEDC6227;
+		};
+		"80764309D7C47CE9D5DA87AC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AppRouter.swift";
+			"sourceTree" = "<group>";
+		};
+		"4778D15A7BBAC28F0CDDAE13" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 80764309D7C47CE9D5DA87AC;
+		};
+		"4900D56C3A208E0F1EC15C8A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MainTabView.swift";
+			"sourceTree" = "<group>";
+		};
+		"6FE48C878946707B003AAB70" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 4900D56C3A208E0F1EC15C8A;
+		};
+		"6EA1A81E3CFF819DC98216D8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "RootView.swift";
+			"sourceTree" = "<group>";
+		};
+		"F9F242659813A8B34BBA551C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6EA1A81E3CFF819DC98216D8;
+		};
+		"71163695514449F6A2D703FA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "UntilPaydayApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"D34931F53697D7A35B02AA1A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 71163695514449F6A2D703FA;
+		};
+		"4DBDBD6D73E6BBB025819E8A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AppEnums.swift";
+			"sourceTree" = "<group>";
+		};
+		"87CA367DA7A570AECAD89E1A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 4DBDBD6D73E6BBB025819E8A;
+		};
+		"6183A073EB56A30AD1EF29A9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AppSettingsModel.swift";
+			"sourceTree" = "<group>";
+		};
+		"6708C6BB749865935A43D20F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6183A073EB56A30AD1EF29A9;
+		};
+		"10CD921421F3A03F12B4EE31" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillOccurrence.swift";
+			"sourceTree" = "<group>";
+		};
+		"7DE96FFCBA7B86D4930AF8C3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 10CD921421F3A03F12B4EE31;
+		};
+		"0C4178D1060833D6F78CA2DC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillTemplate.swift";
+			"sourceTree" = "<group>";
+		};
+		"0A2585199F3B9FC4C833C968" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 0C4178D1060833D6F78CA2DC;
+		};
+		"773BED4509DCC4E9AD2D2250" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BudgetTransaction.swift";
+			"sourceTree" = "<group>";
+		};
+		"035B4F518B22E9F93E9CA4DC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 773BED4509DCC4E9AD2D2250;
+		};
+		"8C83A67881D999DD7C5A2903" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PayCycle.swift";
+			"sourceTree" = "<group>";
+		};
+		"549D20BD869326CD2D9F1CFD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 8C83A67881D999DD7C5A2903;
+		};
+		"3E3CA6AEE6F78370047D2582" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AdFrequencyController.swift";
+			"sourceTree" = "<group>";
+		};
+		"0766F74B060B0C8F3B8B15B0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 3E3CA6AEE6F78370047D2582;
+		};
+		"70DD9F4C9CAFA9B3E341B7B3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AdManager.swift";
+			"sourceTree" = "<group>";
+		};
+		"2AF49347CFC3C4203E1A5020" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 70DD9F4C9CAFA9B3E341B7B3;
+		};
+		"79A7B473D8254083CD990223" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AdPrivacyConfiguration.swift";
+			"sourceTree" = "<group>";
+		};
+		"936C7D4DB28F3B3D2D1F789C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 79A7B473D8254083CD990223;
+		};
+		"13D139EF0BEA7D513674A906" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillOccurrenceEngine.swift";
+			"sourceTree" = "<group>";
+		};
+		"ADF8FFB0DF8F2496FFCB4196" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 13D139EF0BEA7D513674A906;
+		};
+		"D156E3A50814F565ED74A447" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BudgetSnapshotFactory.swift";
+			"sourceTree" = "<group>";
+		};
+		"61ED5A1BF7A1FF0D607C1C10" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = D156E3A50814F565ED74A447;
+		};
+		"AA66C304D6C31FC7B7540FAF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ConsentManager.swift";
+			"sourceTree" = "<group>";
+		};
+		"28A0365499E4D4738BA09157" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = AA66C304D6C31FC7B7540FAF;
+		};
+		"6BDEA9A3264A16CE281E94F9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "CycleManager.swift";
+			"sourceTree" = "<group>";
+		};
+		"2CC3B32AC75F4DEB90ADDB4F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6BDEA9A3264A16CE281E94F9;
+		};
+		"726A365CEE3CDE9B0DF3FB87" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "NotificationManager.swift";
+			"sourceTree" = "<group>";
+		};
+		"76AE568D92C564EE649DB359" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 726A365CEE3CDE9B0DF3FB87;
+		};
+		"FE70CE52C85D6F8BE777D622" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TodayStateBuilder.swift";
+			"sourceTree" = "<group>";
+		};
+		"C6F6507C5D5971276EA338F1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = FE70CE52C85D6F8BE777D622;
+		};
+		"4D5E7D9DA2E96AFE8A28B2B7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "UITestBootstrap.swift";
+			"sourceTree" = "<group>";
+		};
+		"831B545552457A8644BBA1E9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 4D5E7D9DA2E96AFE8A28B2B7;
+		};
+		"832BF62EC9B98E803F910330" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WidgetSnapshotStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"F632491EBECA5883F7FE3883" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 832BF62EC9B98E803F910330;
+		};
+		"15219C02DAE0B51F0E67235F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "CurrencyMetadata.swift";
+			"sourceTree" = "<group>";
+		};
+		"A61636DCB6085F98A6793033" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 15219C02DAE0B51F0E67235F;
+		};
+		"E54F244DE13C536685528C56" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DateHelpers.swift";
+			"sourceTree" = "<group>";
+		};
+		"B660AE3A990F1E1DB11744D6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = E54F244DE13C536685528C56;
+		};
+		"4CE1643363BC6F75D89FC8EA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DesignSystem.swift";
+			"sourceTree" = "<group>";
+		};
+		"0A9E0EA22E740239C9D67B5E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 4CE1643363BC6F75D89FC8EA;
+		};
+		"6D6BA5F43AC47C8E53440624" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MoneyFormatter.swift";
+			"sourceTree" = "<group>";
+		};
+		"125DECF0D1FD8009B9957B0D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6D6BA5F43AC47C8E53440624;
+		};
+		"B804114FB11F6B36F60E7C70" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillRow.swift";
+			"sourceTree" = "<group>";
+		};
+		"4A77014FF5F7CE6B6277763D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = B804114FB11F6B36F60E7C70;
+		};
+		"73C35DDB44A926169F447214" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "LargeMoneyInput.swift";
+			"sourceTree" = "<group>";
+		};
+		"2DA6C04D062883C666095979" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 73C35DDB44A926169F447214;
+		};
+		"914AE877F8D4146C476688B2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MoneyEntryField.swift";
+			"sourceTree" = "<group>";
+		};
+		"49D718538BF643202824F7EC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 914AE877F8D4146C476688B2;
+		};
+		"1F10B4001E6EAF538B80D726" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MoneyHeroCard.swift";
+			"sourceTree" = "<group>";
+		};
+		"E4BB25F8F2C1D944C7805F7D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 1F10B4001E6EAF538B80D726;
+		};
+		"61E828AC23E462686943D1E3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PaydayBanner.swift";
+			"sourceTree" = "<group>";
+		};
+		"21EE47B9451E47975671362B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 61E828AC23E462686943D1E3;
+		};
+		"D6CF22EAE4AAC43ECC5582ED" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PrimaryButtonStyle.swift";
+			"sourceTree" = "<group>";
+		};
+		"81A377C46BE75970D0C1A008" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = D6CF22EAE4AAC43ECC5582ED;
+		};
+		"0A24C6AA657E9C3C64665D15" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "SafeTodayCard.swift";
+			"sourceTree" = "<group>";
+		};
+		"CC44E08F7DBEA512EA168489" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 0A24C6AA657E9C3C64665D15;
+		};
+		"C3038A8AA5C72606E4725A0D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "SectionEyebrow.swift";
+			"sourceTree" = "<group>";
+		};
+		"56183600B370FFEA1FB4DE7B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = C3038A8AA5C72606E4725A0D;
+		};
+		"8C9FDE46CC4F151305087397" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "SurfaceCard.swift";
+			"sourceTree" = "<group>";
+		};
+		"6602A8E9FB64B77C94742E04" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 8C9FDE46CC4F151305087397;
+		};
+		"5716841DCEF647190139199C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TrustSummaryCard.swift";
+			"sourceTree" = "<group>";
+		};
+		"DD8AFE797FAA93715ADF8392" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 5716841DCEF647190139199C;
+		};
+		"4BF4372EB28CBB21B6609859" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "UpcomingBillRowView.swift";
+			"sourceTree" = "<group>";
+		};
+		"9CB2BAAC06075855D7F1386D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 4BF4372EB28CBB21B6609859;
+		};
+		"117C932149C76D302DBF8AE4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "HistoryView.swift";
+			"sourceTree" = "<group>";
+		};
+		"2C82B42983BE4A67B2187FEA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 117C932149C76D302DBF8AE4;
+		};
+		"8C6C08FCD87B421E9AF62A14" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "OnboardingView.swift";
+			"sourceTree" = "<group>";
+		};
+		"4707E930CBED074F22D3CDA3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 8C6C08FCD87B421E9AF62A14;
+		};
+		"92631B12F3270744670702E8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PaydaySheet.swift";
+			"sourceTree" = "<group>";
+		};
+		"A6492DB13977F0E9C86B54CB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 92631B12F3270744670702E8;
+		};
+		"BA790B7FE7A65B7F53B5EDCD" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AddBillView.swift";
+			"sourceTree" = "<group>";
+		};
+		"33B8D5208861D15B3D3956FD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = BA790B7FE7A65B7F53B5EDCD;
+		};
+		"D69BDA2DF7D86FC2BF365090" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillDetailView.swift";
+			"sourceTree" = "<group>";
+		};
+		"A9940DF7048726CE93C650C6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = D69BDA2DF7D86FC2BF365090;
+		};
+		"7E0520525B359DA74CFE70C3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "EditBillView.swift";
+			"sourceTree" = "<group>";
+		};
+		"F5B341B0DC55265985E304F7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 7E0520525B359DA74CFE70C3;
+		};
+		"CA802265D8A15686BF0683E2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PlanView.swift";
+			"sourceTree" = "<group>";
+		};
+		"18E506E347FB6008FB69DE7E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = CA802265D8A15686BF0683E2;
+		};
+		"5F483AE906DC811AD1B3BBF8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AboutInfoView.swift";
+			"sourceTree" = "<group>";
+		};
+		"F15DF3643E63083ECE8F26E1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 5F483AE906DC811AD1B3BBF8;
+		};
+		"B3B2BA4ED495F63B0E61B7D6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DefaultAmountEditor.swift";
+			"sourceTree" = "<group>";
+		};
+		"7B5F176C168F9D3BADEBF5A3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = B3B2BA4ED495F63B0E61B7D6;
+		};
+		"1786DA9599497B791EEA6D17" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "SettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"A3241DBBFD1FA2B137C16898" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 1786DA9599497B791EEA6D17;
+		};
+		"EE2398DD691370E6F03DF27C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AddTransactionView.swift";
+			"sourceTree" = "<group>";
+		};
+		"EF14EB5B058EA772A5F5173C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = EE2398DD691370E6F03DF27C;
+		};
+		"D356E2A180EAACF8A699CEA8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MarkBillPaidView.swift";
+			"sourceTree" = "<group>";
+		};
+		"E1EDF317720A55ED2D86EF80" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = D356E2A180EAACF8A699CEA8;
+		};
+		"BFA552B340D36568B36FAD89" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TodayView.swift";
+			"sourceTree" = "<group>";
+		};
+		"E53206F369BAF0884B71E677" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = BFA552B340D36568B36FAD89;
+		};
+		"E5DE18C37586350E7EB90C8C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TodayViewState.swift";
+			"sourceTree" = "<group>";
+		};
+		"CAED582244067E92D94EE14F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = E5DE18C37586350E7EB90C8C;
+		};
+		"96FDAF5FCA964BA1EE04F3D5" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"62DC07CEF6C8872B23C9ED9C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 96FDAF5FCA964BA1EE04F3D5;
+		};
+		"457CAB3D325757EAD5BAB336" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"01953AB3109123BA33C4489F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 457CAB3D325757EAD5BAB336;
+		};
+		"E1909D5E8E45FAC037F215A7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.json.xcstrings";
+			"path" = "Localizable.xcstrings";
+			"sourceTree" = "<group>";
+		};
+		"A64D6E1A1FA3B83E2F74BC4A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = E1909D5E8E45FAC037F215A7;
+		};
+		"DCC02BD451030F0B38CCF760" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = 49652A13D58AD96B1B4F9E2F;
+			"productName" = "UntilPaydayCore";
+		};
+		"23755F8AE765E50E3F20D7EE" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = DCC02BD451030F0B38CCF760;
+		};
+		"AEE2CC9BD56610C9328A4794" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = 8D9B57A96758071C65350C25;
+			"productName" = "GoogleMobileAds";
+		};
+		"0018B16E46A89A88337B4EB8" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = AEE2CC9BD56610C9328A4794;
+		};
+		"6C48A8F3D8B16EDC44DEA2BE" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = A5A54C007ADCB895B9E4300F;
+			"productName" = "GoogleUserMessagingPlatform";
+		};
+		"EBDB72DCFB19DECF0942098B" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = 6C48A8F3D8B16EDC44DEA2BE;
+		};
+		"674CD465A00CE777773BDEBC" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = 244210E48437B6556980A702;
+			"proxyType" = "1";
+			"remoteGlobalIDString" = E6191F32661A5641D0E2CE6C;
+			"remoteInfo" = "UntilPaydayWidget";
+		};
+		"355B5176D4AA25CB9968CAC4" = {
+			"isa" = "PBXTargetDependency";
+			"target" = E6191F32661A5641D0E2CE6C;
+			"targetProxy" = 674CD465A00CE777773BDEBC;
+		};
+		"C27D33E687A680EEB0D5552C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = D41F036A010A19210D5E8D37;
+			"settings" = {
+				"ATTRIBUTES" = (
+					"CodeSignOnCopy",
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"2449198E67C0097AD29E9D6F" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				D7CCF1DFD4BBDBB67C9C32A9,
+				27565A3DABF1CC288F041304,
+				73003367081B6A690E8FE98F,
+				2DD8694D3931CE46129E6350,
+				4778D15A7BBAC28F0CDDAE13,
+				6FE48C878946707B003AAB70,
+				F9F242659813A8B34BBA551C,
+				D34931F53697D7A35B02AA1A,
+				87CA367DA7A570AECAD89E1A,
+				6708C6BB749865935A43D20F,
+				7DE96FFCBA7B86D4930AF8C3,
+				0A2585199F3B9FC4C833C968,
+				035B4F518B22E9F93E9CA4DC,
+				549D20BD869326CD2D9F1CFD,
+				0766F74B060B0C8F3B8B15B0,
+				2AF49347CFC3C4203E1A5020,
+				936C7D4DB28F3B3D2D1F789C,
+				ADF8FFB0DF8F2496FFCB4196,
+				61ED5A1BF7A1FF0D607C1C10,
+				28A0365499E4D4738BA09157,
+				2CC3B32AC75F4DEB90ADDB4F,
+				76AE568D92C564EE649DB359,
+				C6F6507C5D5971276EA338F1,
+				831B545552457A8644BBA1E9,
+				F632491EBECA5883F7FE3883,
+				A61636DCB6085F98A6793033,
+				B660AE3A990F1E1DB11744D6,
+				0A9E0EA22E740239C9D67B5E,
+				125DECF0D1FD8009B9957B0D,
+				4A77014FF5F7CE6B6277763D,
+				2DA6C04D062883C666095979,
+				49D718538BF643202824F7EC,
+				E4BB25F8F2C1D944C7805F7D,
+				21EE47B9451E47975671362B,
+				81A377C46BE75970D0C1A008,
+				CC44E08F7DBEA512EA168489,
+				56183600B370FFEA1FB4DE7B,
+				6602A8E9FB64B77C94742E04,
+				DD8AFE797FAA93715ADF8392,
+				9CB2BAAC06075855D7F1386D,
+				2C82B42983BE4A67B2187FEA,
+				4707E930CBED074F22D3CDA3,
+				A6492DB13977F0E9C86B54CB,
+				33B8D5208861D15B3D3956FD,
+				A9940DF7048726CE93C650C6,
+				F5B341B0DC55265985E304F7,
+				18E506E347FB6008FB69DE7E,
+				F15DF3643E63083ECE8F26E1,
+				7B5F176C168F9D3BADEBF5A3,
+				A3241DBBFD1FA2B137C16898,
+				EF14EB5B058EA772A5F5173C,
+				E1EDF317720A55ED2D86EF80,
+				E53206F369BAF0884B71E677,
+				CAED582244067E92D94EE14F,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"80CA755AA97CAAABBFED68BC" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				23755F8AE765E50E3F20D7EE,
+				0018B16E46A89A88337B4EB8,
+				EBDB72DCFB19DECF0942098B,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D9F7DCA3078BCE97E21B3AAD" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				62DC07CEF6C8872B23C9ED9C,
+				01953AB3109123BA33C4489F,
+				A64D6E1A1FA3B83E2F74BC4A,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"BF127058196A79FF2F1601C9" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"dstPath" = "";
+			"dstSubfolderSpec" = "13";
+			"files" = (
+				C27D33E687A680EEB0D5552C,
+			);
+			"name" = "Embed App Extensions";
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"2C7562ADEEB057A0333EE8A1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "AppInfo.plist";
+			"sourceTree" = "<group>";
+		};
+		"8F282249A21BB80B80EA7962" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "UntilPayday.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"4E1C24A0C713D5E9B564176E" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPayday";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.baewumnote.untilpayday";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"INFOPLIST_FILE" = "Config/AppInfo.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/UntilPayday.entitlements";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+			};
+		};
+		"3176B17B495BDB4901CBD0E0" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPayday";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.baewumnote.untilpayday";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"INFOPLIST_FILE" = "Config/AppInfo.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/UntilPayday.entitlements";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+			};
+		};
+		"3197B18F2B892F200A9EA77B" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				4E1C24A0C713D5E9B564176E,
+				3176B17B495BDB4901CBD0E0,
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"602A70DD8B8E42B5F291B809" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = 3197B18F2B892F200A9EA77B;
+			"buildPhases" = (
+				2449198E67C0097AD29E9D6F,
+				80CA755AA97CAAABBFED68BC,
+				D9F7DCA3078BCE97E21B3AAD,
+				BF127058196A79FF2F1601C9,
+			);
+			"buildRules" = ();
+			"dependencies" = (
+				355B5176D4AA25CB9968CAC4,
+			);
+			"name" = "UntilPayday";
+			"packageProductDependencies" = (
+				DCC02BD451030F0B38CCF760,
+				AEE2CC9BD56610C9328A4794,
+				6C48A8F3D8B16EDC44DEA2BE,
+			);
+			"productName" = "UntilPayday";
+			"productReference" = 1B6DF7973E305F7756B13025;
+			"productType" = "com.apple.product-type.application";
+		};
+		"D051DD80B8B7C16ADBEB9D46" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 6E273A96616329E7117AD3EA;
+		};
+		"C9580DA5A73A7DAD6FAC9F9A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 630EB015D3B89CF8B765BC1A;
+		};
+		"8EC9F09123C0EDB6543385C1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 7E0D33D155EEA2E8F0AE46B6;
+		};
+		"810ADE997A82C56CAE9EBFE0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PaydayTimelineProvider.swift";
+			"sourceTree" = "<group>";
+		};
+		"45574E0E1638C0546F619FE3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 810ADE997A82C56CAE9EBFE0;
+		};
+		"31EE015055E484CF7FD03CAF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PaydayWidgetView.swift";
+			"sourceTree" = "<group>";
+		};
+		"9523A6BC92C7AF7B56756858" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 31EE015055E484CF7FD03CAF;
+		};
+		"93ADF377B6D8543061EEE30C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "UntilPaydayWidget.swift";
+			"sourceTree" = "<group>";
+		};
+		"A07A1852DA28EA7A9AEC6D04" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 93ADF377B6D8543061EEE30C;
+		};
+		"EE527F14020991716C5D21BA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"B1C9DDC03AF2A84E7C590D7E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = EE527F14020991716C5D21BA;
+		};
+		"AC1523EEE6E6CB3200F9E96B" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				D051DD80B8B7C16ADBEB9D46,
+				C9580DA5A73A7DAD6FAC9F9A,
+				8EC9F09123C0EDB6543385C1,
+				45574E0E1638C0546F619FE3,
+				9523A6BC92C7AF7B56756858,
+				A07A1852DA28EA7A9AEC6D04,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"1A4F3B7FA86FE78B0C4143A0" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D26A69EC1AB4156EC8E403F3" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				B1C9DDC03AF2A84E7C590D7E,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"ADDFBE094A60BA902F55E0D4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "WidgetInfo.plist";
+			"sourceTree" = "<group>";
+		};
+		"1F7B8AC8212456EEF037F7ED" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "UntilPaydayWidget.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"C8B93C5265FE5811370DAA93" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayWidget";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.baewumnote.untilpayday.widget";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"INFOPLIST_FILE" = "Config/WidgetInfo.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/UntilPaydayWidget.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+			};
+		};
+		"9FFC038B6B5406CC22ED54A4" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayWidget";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.baewumnote.untilpayday.widget";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"INFOPLIST_FILE" = "Config/WidgetInfo.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/UntilPaydayWidget.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+			};
+		};
+		"D828523322802E4ED680A2EA" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				C8B93C5265FE5811370DAA93,
+				9FFC038B6B5406CC22ED54A4,
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"E6191F32661A5641D0E2CE6C" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = D828523322802E4ED680A2EA;
+			"buildPhases" = (
+				AC1523EEE6E6CB3200F9E96B,
+				1A4F3B7FA86FE78B0C4143A0,
+				D26A69EC1AB4156EC8E403F3,
+			);
+			"buildRules" = ();
+			"dependencies" = ();
+			"name" = "UntilPaydayWidget";
+			"packageProductDependencies" = ();
+			"productName" = "UntilPaydayWidget";
+			"productReference" = D41F036A010A19210D5E8D37;
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"CF5F383F70D505E3C773A2ED" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "AdFrequencyControllerTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"A994D19D0408A9F63A2B5F86" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = CF5F383F70D505E3C773A2ED;
+		};
+		"8A570B82AEF43D947C7DA2A4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "BillAccountingTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"F4F5BB4AEB4F916AAD0E0A01" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 8A570B82AEF43D947C7DA2A4;
+		};
+		"3650AC6E8779C746D839ACCA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "CycleManagerTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"5B96D259B5F21FB5119834D5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 3650AC6E8779C746D839ACCA;
+		};
+		"1F22B68F19C5E21B0FF70894" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MoneyFormatterTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"7D6AA12866669AF99331F41C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 1F22B68F19C5E21B0FF70894;
+		};
+		"F7B0A683635F4ADD134D0DDB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TodayStateBuilderTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"88561D171A8701170584DBE9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = F7B0A683635F4ADD134D0DDB;
+		};
+		"894700BFCF96B40D55024AB1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WidgetSnapshotTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"5B50C06245702CDDBFF822DD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 894700BFCF96B40D55024AB1;
+		};
+		"B67195A763D5A7884287454D" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = 244210E48437B6556980A702;
+			"proxyType" = "1";
+			"remoteGlobalIDString" = 602A70DD8B8E42B5F291B809;
+			"remoteInfo" = "UntilPayday";
+		};
+		"ACA11B29F20A09D4D6BF1444" = {
+			"isa" = "PBXTargetDependency";
+			"target" = 602A70DD8B8E42B5F291B809;
+			"targetProxy" = B67195A763D5A7884287454D;
+		};
+		"71DA0BC664DE8029911A316D" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = 49652A13D58AD96B1B4F9E2F;
+			"productName" = "UntilPaydayCore";
+		};
+		"CECAAF8C027FA6F586A19FA3" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = 71DA0BC664DE8029911A316D;
+		};
+		"F60D216933F944E39148CD2F" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				A994D19D0408A9F63A2B5F86,
+				F4F5BB4AEB4F916AAD0E0A01,
+				5B96D259B5F21FB5119834D5,
+				7D6AA12866669AF99331F41C,
+				88561D171A8701170584DBE9,
+				5B50C06245702CDDBFF822DD,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D5ABE1C2D68E5290395255FF" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				CECAAF8C027FA6F586A19FA3,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"9F3403AC22A91B788E2950EF" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E2F4A6FEE0FD0EBD95C392BD" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayTests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.UntilPaydayTests";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"TEST_TARGET_NAME" = "UntilPayday";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/UntilPayday.app/UntilPayday";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+			};
+		};
+		"59E3040BDC8939656247512E" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayTests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.UntilPaydayTests";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"TEST_TARGET_NAME" = "UntilPayday";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/UntilPayday.app/UntilPayday";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+			};
+		};
+		"EB2A7E08E082036A47A55951" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				E2F4A6FEE0FD0EBD95C392BD,
+				59E3040BDC8939656247512E,
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"8413E73F868B011EB7BFAE56" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = EB2A7E08E082036A47A55951;
+			"buildPhases" = (
+				F60D216933F944E39148CD2F,
+				D5ABE1C2D68E5290395255FF,
+				9F3403AC22A91B788E2950EF,
+			);
+			"buildRules" = ();
+			"dependencies" = (
+				ACA11B29F20A09D4D6BF1444,
+			);
+			"name" = "UntilPaydayTests";
+			"packageProductDependencies" = (
+				71DA0BC664DE8029911A316D,
+			);
+			"productName" = "UntilPaydayTests";
+			"productReference" = C36117A36B1388651336FB0D;
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"E72778C6700326EE467C6811" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ExpenseFlowTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"3203544D45681F30811FF066" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = E72778C6700326EE467C6811;
+		};
+		"577B855326AF9F748924E25E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "OnboardingSmokeTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"89255BE2D1660E94757B214C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 577B855326AF9F748924E25E;
+		};
+		"0A63DDE31AD15DBCF37CC36A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PaydayAndHistorySmokeTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"2F73449C9070441D42D6C8E0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 0A63DDE31AD15DBCF37CC36A;
+		};
+		"CA6E318285FFFEA90A3BFA2D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "VisualMasterNavigationTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"8D2E88C2C32580DA99AEEED0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = CA6E318285FFFEA90A3BFA2D;
+		};
+		"80C6C1C1C79778F7F37CCE97" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "VisualMasterScreenshotSmokeTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"931C52E1DB70B23E7970BFD6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 80C6C1C1C79778F7F37CCE97;
+		};
+		"9E57744524EF3CB400A02CC3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ZZAppScreenshotTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"430305B6381684F3E4C4A63E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 9E57744524EF3CB400A02CC3;
+		};
+		"E75CA489E8B4E2F66A0B7311" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ZZWidgetRuntimeTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"C37B3BE7D91C3DEB3EC9515C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = E75CA489E8B4E2F66A0B7311;
+		};
+		"57088B23ABBF57F94476FCEA" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = 244210E48437B6556980A702;
+			"proxyType" = "1";
+			"remoteGlobalIDString" = 602A70DD8B8E42B5F291B809;
+			"remoteInfo" = "UntilPayday";
+		};
+		"99FF86BC4AB714BACD911C4D" = {
+			"isa" = "PBXTargetDependency";
+			"target" = 602A70DD8B8E42B5F291B809;
+			"targetProxy" = 57088B23ABBF57F94476FCEA;
+		};
+		"82546B76327B42413F8C23D6" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				3203544D45681F30811FF066,
+				89255BE2D1660E94757B214C,
+				2F73449C9070441D42D6C8E0,
+				8D2E88C2C32580DA99AEEED0,
+				931C52E1DB70B23E7970BFD6,
+				430305B6381684F3E4C4A63E,
+				C37B3BE7D91C3DEB3EC9515C,
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"50041D37AF03063825D8F90B" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"58F77084345363B0D143F155" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"291E6F62BC1E98D7C5CAFC6E" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.UntilPaydayUITests";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"TEST_TARGET_NAME" = "UntilPayday";
+			};
+		};
+		"368AE4CCCC52B91416072458" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "UntilPaydayUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.UntilPaydayUITests";
+				"SWIFT_VERSION" = "6.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"TEST_TARGET_NAME" = "UntilPayday";
+			};
+		};
+		"5684391B0A2E7346EC137571" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				291E6F62BC1E98D7C5CAFC6E,
+				368AE4CCCC52B91416072458,
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"F2443ECB2DEC3679EDA784E1" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = 5684391B0A2E7346EC137571;
+			"buildPhases" = (
+				82546B76327B42413F8C23D6,
+				50041D37AF03063825D8F90B,
+				58F77084345363B0D143F155,
+			);
+			"buildRules" = ();
+			"dependencies" = (
+				99FF86BC4AB714BACD911C4D,
+			);
+			"name" = "UntilPaydayUITests";
+			"packageProductDependencies" = ();
+			"productName" = "UntilPaydayUITests";
+			"productReference" = C5887C8CBF990C5324A5E1FE;
+			"productType" = "com.apple.product-type.bundle.ui-testing";
+		};
+		"E743B54D3830827044603897" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text";
+			"path" = "project.yml";
+			"sourceTree" = "<group>";
+		};
+		"D72714EFDF3435C8F188A70C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text";
+			"path" = "README_FIRST.md";
+			"sourceTree" = "<group>";
+		};
+		"C743C915EB1AD175B13DADD1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text";
+			"path" = "SOURCE_MANIFEST.json";
+			"sourceTree" = "<group>";
+		};
+		"B9E7F2871A3402983868AFC8" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				1B6DF7973E305F7756B13025,
+				D41F036A010A19210D5E8D37,
+				C36117A36B1388651336FB0D,
+				C5887C8CBF990C5324A5E1FE,
+			);
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"456466C57D06F35C109E9D1C" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				616AA74BC973F36D3639860B,
+				5F0118DFBFBBC184555275DA,
+				1B3039B2E15DD2AB7EA6156D,
+				022CB20525099AE243733199,
+				E743B54D3830827044603897,
+				D72714EFDF3435C8F188A70C,
+				C743C915EB1AD175B13DADD1,
+				B9E7F2871A3402983868AFC8,
+			);
+			"sourceTree" = "<group>";
+		};
+		"5F0118DFBFBBC184555275DA" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				BFC625E726E3A59E04C5DBD8,
+				67711B8E175E82CCBE59B85E,
+				AFEF462BD031B05B85DA5D4C,
+			);
+			"sourceTree" = "<group>";
+			"path" = "AppSources";
+		};
+		"BFC625E726E3A59E04C5DBD8" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				6E273A96616329E7117AD3EA,
+				630EB015D3B89CF8B765BC1A,
+				7E0D33D155EEA2E8F0AE46B6,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Shared";
+		};
+		"67711B8E175E82CCBE59B85E" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				4227912D8AC1396B19318645,
+				F23D45D4802BA952EF61AA90,
+				7651E3EBBEFBEFA1D0CDFB91,
+				2DBC784418B615019947929C,
+				B34F264421DFC4D5BBC6F65E,
+				96FDAF5FCA964BA1EE04F3D5,
+				1686C5ECAA57E4E2D07C70F3,
+			);
+			"sourceTree" = "<group>";
+			"path" = "UntilPayday";
+		};
+		"4227912D8AC1396B19318645" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				F7ADAE73BBF9A94DDEDC6227,
+				80764309D7C47CE9D5DA87AC,
+				4900D56C3A208E0F1EC15C8A,
+				6EA1A81E3CFF819DC98216D8,
+				71163695514449F6A2D703FA,
+			);
+			"sourceTree" = "<group>";
+			"path" = "App";
+		};
+		"F23D45D4802BA952EF61AA90" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				4DBDBD6D73E6BBB025819E8A,
+				6183A073EB56A30AD1EF29A9,
+				10CD921421F3A03F12B4EE31,
+				0C4178D1060833D6F78CA2DC,
+				773BED4509DCC4E9AD2D2250,
+				8C83A67881D999DD7C5A2903,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Models";
+		};
+		"7651E3EBBEFBEFA1D0CDFB91" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				3E3CA6AEE6F78370047D2582,
+				70DD9F4C9CAFA9B3E341B7B3,
+				79A7B473D8254083CD990223,
+				13D139EF0BEA7D513674A906,
+				D156E3A50814F565ED74A447,
+				AA66C304D6C31FC7B7540FAF,
+				6BDEA9A3264A16CE281E94F9,
+				726A365CEE3CDE9B0DF3FB87,
+				FE70CE52C85D6F8BE777D622,
+				4D5E7D9DA2E96AFE8A28B2B7,
+				832BF62EC9B98E803F910330,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Services";
+		};
+		"2DBC784418B615019947929C" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				15219C02DAE0B51F0E67235F,
+				E54F244DE13C536685528C56,
+				4CE1643363BC6F75D89FC8EA,
+				6D6BA5F43AC47C8E53440624,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Utilities";
+		};
+		"B34F264421DFC4D5BBC6F65E" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				C5476539EBC3D860705E55F0,
+				95381C182B1FF539D73534C3,
+				9770189CBD6EDD5FB5C09647,
+				C4E16AAA77B3CDF1EDB9B61E,
+				5AA268A82FC2B94C3A8B55FB,
+				9123815ABBA93414C6C23C0C,
+				48F40D77A3F2E0045A9C144C,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Views";
+		};
+		"C5476539EBC3D860705E55F0" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				B804114FB11F6B36F60E7C70,
+				73C35DDB44A926169F447214,
+				914AE877F8D4146C476688B2,
+				1F10B4001E6EAF538B80D726,
+				61E828AC23E462686943D1E3,
+				D6CF22EAE4AAC43ECC5582ED,
+				0A24C6AA657E9C3C64665D15,
+				C3038A8AA5C72606E4725A0D,
+				8C9FDE46CC4F151305087397,
+				5716841DCEF647190139199C,
+				4BF4372EB28CBB21B6609859,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Components";
+		};
+		"95381C182B1FF539D73534C3" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				117C932149C76D302DBF8AE4,
+			);
+			"sourceTree" = "<group>";
+			"path" = "History";
+		};
+		"9770189CBD6EDD5FB5C09647" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				8C6C08FCD87B421E9AF62A14,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Onboarding";
+		};
+		"C4E16AAA77B3CDF1EDB9B61E" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				92631B12F3270744670702E8,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Payday";
+		};
+		"5AA268A82FC2B94C3A8B55FB" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				BA790B7FE7A65B7F53B5EDCD,
+				D69BDA2DF7D86FC2BF365090,
+				7E0520525B359DA74CFE70C3,
+				CA802265D8A15686BF0683E2,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Plan";
+		};
+		"9123815ABBA93414C6C23C0C" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				5F483AE906DC811AD1B3BBF8,
+				B3B2BA4ED495F63B0E61B7D6,
+				1786DA9599497B791EEA6D17,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Settings";
+		};
+		"48F40D77A3F2E0045A9C144C" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				EE2398DD691370E6F03DF27C,
+				D356E2A180EAACF8A699CEA8,
+				BFA552B340D36568B36FAD89,
+				E5DE18C37586350E7EB90C8C,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Today";
+		};
+		"1686C5ECAA57E4E2D07C70F3" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				457CAB3D325757EAD5BAB336,
+				E1909D5E8E45FAC037F215A7,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Resources";
+		};
+		"1B3039B2E15DD2AB7EA6156D" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				2C7562ADEEB057A0333EE8A1,
+				8F282249A21BB80B80EA7962,
+				ADDFBE094A60BA902F55E0D4,
+				1F7B8AC8212456EEF037F7ED,
+			);
+			"sourceTree" = "<group>";
+			"path" = "Config";
+		};
+		"AFEF462BD031B05B85DA5D4C" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				810ADE997A82C56CAE9EBFE0,
+				31EE015055E484CF7FD03CAF,
+				93ADF377B6D8543061EEE30C,
+				EE527F14020991716C5D21BA,
+			);
+			"sourceTree" = "<group>";
+			"path" = "UntilPaydayWidget";
+		};
+		"022CB20525099AE243733199" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				AF76D9DD339EEB7DA7EF8E73,
+				F24B57D294E5C4EBB4915385,
+			);
+			"sourceTree" = "<group>";
+			"path" = "AppTests";
+		};
+		"AF76D9DD339EEB7DA7EF8E73" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				CF5F383F70D505E3C773A2ED,
+				8A570B82AEF43D947C7DA2A4,
+				3650AC6E8779C746D839ACCA,
+				1F22B68F19C5E21B0FF70894,
+				F7B0A683635F4ADD134D0DDB,
+				894700BFCF96B40D55024AB1,
+			);
+			"sourceTree" = "<group>";
+			"path" = "UntilPaydayTests";
+		};
+		"F24B57D294E5C4EBB4915385" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				E72778C6700326EE467C6811,
+				577B855326AF9F748924E25E,
+				0A63DDE31AD15DBCF37CC36A,
+				CA6E318285FFFEA90A3BFA2D,
+				80C6C1C1C79778F7F37CCE97,
+				9E57744524EF3CB400A02CC3,
+				E75CA489E8B4E2F66A0B7311,
+			);
+			"sourceTree" = "<group>";
+			"path" = "UntilPaydayUITests";
+		};
+		"184B519F8E1416CCE38CFFD7" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"ALWAYS_SEARCH_USER_PATHS" = "NO";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++20";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "6.0";
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+				"GCC_OPTIMIZATION_LEVEL" = "0";
+				"GCC_PREPROCESSOR_DEFINITIONS" = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"ONLY_ACTIVE_ARCH" = "YES";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+			};
+		};
+		"A824290273A346217D9BE6F4" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"ALWAYS_SEARCH_USER_PATHS" = "NO";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++20";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "6.0";
+				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+		};
+		"14E586E4324BDDD5494634DC" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				184B519F8E1416CCE38CFFD7,
+				A824290273A346217D9BE6F4,
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "1600";
+				"TargetAttributes" = {
+					"602A70DD8B8E42B5F291B809" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"ProvisioningStyle" = "Automatic";
+						"SystemCapabilities" = {
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = "1";
+							};
+						};
+					};
+					"E6191F32661A5641D0E2CE6C" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"ProvisioningStyle" = "Automatic";
+						"SystemCapabilities" = {
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = "1";
+							};
+						};
+					};
+					"8413E73F868B011EB7BFAE56" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"ProvisioningStyle" = "Automatic";
+						"TestTargetID" = 602A70DD8B8E42B5F291B809;
+					};
+					"F2443ECB2DEC3679EDA784E1" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"ProvisioningStyle" = "Automatic";
+						"TestTargetID" = 602A70DD8B8E42B5F291B809;
+					};
+				};
+			};
+			"buildConfigurationList" = 14E586E4324BDDD5494634DC;
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = "0";
+			"knownRegions" = (
+				"en",
+				"Base",
+			);
+			"mainGroup" = 456466C57D06F35C109E9D1C;
+			"packageReferences" = (
+				49652A13D58AD96B1B4F9E2F,
+				8D9B57A96758071C65350C25,
+				A5A54C007ADCB895B9E4300F,
+			);
+			"productRefGroup" = B9E7F2871A3402983868AFC8;
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				602A70DD8B8E42B5F291B809,
+				E6191F32661A5641D0E2CE6C,
+				8413E73F868B011EB7BFAE56,
+				F2443ECB2DEC3679EDA784E1,
+			);
+		};
+	};
+	"rootObject" = 244210E48437B6556980A702;
+}

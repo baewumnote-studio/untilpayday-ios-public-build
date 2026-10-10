@@ -1,0 +1,13 @@
+{
+  "registrationVerified": true,
+  "teamID": "39762JRYD4",
+  "mainBundleID": "com.baewumnote.untilpayday",
+  "widgetBundleID": "com.baewumnote.untilpayday.widget",
+  "appGroupID": "group.com.baewumnote.untilpayday.shared",
+  "certificateSHA256": "faa9fe5ba226b207869a5070716bfb41aa9b95f250c374a4ddffbcb996c981fc",
+  "version": "1.0",
+  "minimumOS": "17.0",
+  "validatedSourceCommit": "662dc862f0ace4de1baba53114ca6b0cffd3213f",
+  "verifiedXcodeVersion": "27.0",
+  "status": "APPLE_IDS_GROUP_AND_SINGLE_DEVICE_PROFILES_VERIFIED"
+}

@@ -1,0 +1,426 @@
+{
+  "sourceCommit": "662dc862f0ace4de1baba53114ca6b0cffd3213f",
+  "sourceCodeAndAssetChanges": 0,
+  "files": [
+    {
+      "path": "AppSources/Shared/CurrencyRules.swift",
+      "bytes": 259,
+      "sha256": "69851af641829cc206172fce133fe0405f14d870ae80f013a4f8d794f34c19bf"
+    },
+    {
+      "path": "AppSources/Shared/WidgetBudgetCalculator.swift",
+      "bytes": 2657,
+      "sha256": "629fb3ce832d5f59a9fdbd6eeff107923f5072e9f3610c28f3e55f356183bedc"
+    },
+    {
+      "path": "AppSources/Shared/WidgetShared.swift",
+      "bytes": 1320,
+      "sha256": "4189ed09b3930efeaacfe346bb222d26cb9225f20c9437e58ec2821de10375a3"
+    },
+    {
+      "path": "AppSources/UntilPayday/App/AppBrand.swift",
+      "bytes": 228,
+      "sha256": "5b7998cddfdaa829f584fdad1a99b72c5c8e45495fd63e2626efb88dda8212cb"
+    },
+    {
+      "path": "AppSources/UntilPayday/App/AppRouter.swift",
+      "bytes": 902,
+      "sha256": "be4ed186d6f24ac514d2c1a9ade1ec70eb41e57965a6824ac0d72e792d73df76"
+    },
+    {
+      "path": "AppSources/UntilPayday/App/MainTabView.swift",
+      "bytes": 1507,
+      "sha256": "1606c6d7ac72eee485e7f4ebe2baf38216134f359a4c40454d90d735444ad001"
+    },
+    {
+      "path": "AppSources/UntilPayday/App/RootView.swift",
+      "bytes": 936,
+      "sha256": "48e1bc2a42c1f56bfa876414d74394084a36225055751e53d321995320069b28"
+    },
+    {
+      "path": "AppSources/UntilPayday/App/UntilPaydayApp.swift",
+      "bytes": 881,
+      "sha256": "2e6806c6b3d9f4abd0cba534e96fe845d65901631b12257b5caf6a2ed49c572c"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/AppEnums.swift",
+      "bytes": 2567,
+      "sha256": "aef097246c91b7a106eae10c861f0436649e736e8b33ec9fc9051a69756c83e6"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/AppSettingsModel.swift",
+      "bytes": 3516,
+      "sha256": "e4c600dc6a32537caa9ad8d6f0032a01adc370941f0d49c86b69ab3d4c8ae91e"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/BillOccurrence.swift",
+      "bytes": 1680,
+      "sha256": "5845f70051e5d33e1a88c80c0584a99c9643e7f66f07e7a0aca47d919ef9f891"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/BillTemplate.swift",
+      "bytes": 1598,
+      "sha256": "f89bdeda73036930d9e6230f5bc874508910bf8e5f926faf2b62ab608ab37a24"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/BudgetTransaction.swift",
+      "bytes": 1329,
+      "sha256": "f0240d790e1ec367e37f4a6c09424b36f4fcc645c4156eea1ba7051847b65db0"
+    },
+    {
+      "path": "AppSources/UntilPayday/Models/PayCycle.swift",
+      "bytes": 1711,
+      "sha256": "cc615dde69e20d112b9ac84be71fb0c3fe041e957d37f11786533eceb4d882a0"
+    },
+    {
+      "path": "AppSources/UntilPayday/PrivacyInfo.xcprivacy",
+      "bytes": 681,
+      "sha256": "57d5952d14b6250696277ad8fa7cb178c38ae0184fe7e7f2bc685a621a5b90f8"
+    },
+    {
+      "path": "AppSources/UntilPayday/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "bytes": 825401,
+      "sha256": "09c086beba2da90514a492beb329c1a8998f3a9fad3221948d60e4629468f98f"
+    },
+    {
+      "path": "AppSources/UntilPayday/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "bytes": 208,
+      "sha256": "3c6addf3f20972a12a0c33e6f6fe9e0857a0bdb512dce5d59f4bd007b236c157"
+    },
+    {
+      "path": "AppSources/UntilPayday/Resources/Localizable.xcstrings",
+      "bytes": 11128,
+      "sha256": "362e1aff8d766fba5f6c773bde8c065ab33244b5a66274b27adcf580797ec7d4"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/AdFrequencyController.swift",
+      "bytes": 1511,
+      "sha256": "ca6d7f495c7aea65b5c7fe9ca838da462054870c8a2e41fd0a80b4552fa101c6"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/AdManager.swift",
+      "bytes": 2287,
+      "sha256": "c50c21a55f6c4b5eead10d51c2fa40f7c3efa293699f1629ae011c5fab146e1b"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/AdPrivacyConfiguration.swift",
+      "bytes": 455,
+      "sha256": "e0637fbd9fd778f9d307159280ac182cf9d4bdf74547662f8ced8fe0eb803a3e"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/BillOccurrenceEngine.swift",
+      "bytes": 4201,
+      "sha256": "5b7f387e78bc365d4b58000c59f5c21b80a65994c33f663f1f68c6f612bb2a12"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/BudgetSnapshotFactory.swift",
+      "bytes": 2751,
+      "sha256": "371a8de5a2b482c8e216a7fb43fb3c35d325f34cd2d97fe14fab75e53b45350d"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/ConsentManager.swift",
+      "bytes": 1303,
+      "sha256": "5a6417e27f98e59c015dd377f5c20d4e2417a9dd6f18d41ccaa41203d887b4c2"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/CycleManager.swift",
+      "bytes": 9003,
+      "sha256": "a362a5ac075487a3778f127f6cd07e2995ab4c2675cc344aad755d2ecb6f11f6"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/NotificationManager.swift",
+      "bytes": 2139,
+      "sha256": "746b879f14c3cec889714e1dcf0505596fb7c8013019b1d987d2edcfb3ca452a"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/TodayStateBuilder.swift",
+      "bytes": 1810,
+      "sha256": "e9ccb5f0a3af2fe754ce42102245047d511e0b4f8d8062741b38a3f5108f72b5"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/UITestBootstrap.swift",
+      "bytes": 9261,
+      "sha256": "09547b6c546b5a5d8282b129bdb2ca3d7e11c85b25eb89b081b99bda32694d3d"
+    },
+    {
+      "path": "AppSources/UntilPayday/Services/WidgetSnapshotStore.swift",
+      "bytes": 558,
+      "sha256": "d1cd43826c32f244fc5a909999b5258ffd4c9065a8db864704d870cec6da6b03"
+    },
+    {
+      "path": "AppSources/UntilPayday/Utilities/CurrencyMetadata.swift",
+      "bytes": 592,
+      "sha256": "759685f3a72a172fe6b156f09a3ac132820b0360aab43f592be0c97a849fae5c"
+    },
+    {
+      "path": "AppSources/UntilPayday/Utilities/DateHelpers.swift",
+      "bytes": 544,
+      "sha256": "7fbf18d5eca125b2d02fdf66275ecbc27d76d891620a1c1bcc16b600229cf912"
+    },
+    {
+      "path": "AppSources/UntilPayday/Utilities/DesignSystem.swift",
+      "bytes": 4233,
+      "sha256": "e54bf3d07c2176ae3f39f2b99d0c5b220ec9cff8bc17f0dc54ac9dfa71d42a17"
+    },
+    {
+      "path": "AppSources/UntilPayday/Utilities/MoneyFormatter.swift",
+      "bytes": 4855,
+      "sha256": "2de6753a9409146931573836dc99394f3ddd13e676e4bef9ded81f6ad722a374"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/BillRow.swift",
+      "bytes": 2787,
+      "sha256": "c33380b4eb8e56b1d5822901084ea8902b1257a3d668cdeda15d65bd7b907161"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/LargeMoneyInput.swift",
+      "bytes": 1359,
+      "sha256": "eea34dcc0f7ace39f097acfbbd30c3b99d03fd8774a0614d122a5b0da7c73a74"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/MoneyEntryField.swift",
+      "bytes": 1279,
+      "sha256": "57f8b550f45eb0f736f4f5a395758143e79d9aa4d6ed6673c4e255a1740582ad"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/MoneyHeroCard.swift",
+      "bytes": 1763,
+      "sha256": "b4a8664196ec6d83ea7fbf8e3cb24eb92891539d63939619b4d2f229660f622a"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/PaydayBanner.swift",
+      "bytes": 1122,
+      "sha256": "e065733c00de95249d8edb954b2490393d99530ca23d785a01a9cb4dcf5c645b"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/PrimaryButtonStyle.swift",
+      "bytes": 1870,
+      "sha256": "4435c6e00639ea4c444998f7b60a4392a4f99df87e26e7a97fbb9f98cd0c4403"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/SafeTodayCard.swift",
+      "bytes": 5873,
+      "sha256": "314e1694a915079c8d11065d73deb5d784e78f5feb9cf2c4dad6877df2a109ec"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/SectionEyebrow.swift",
+      "bytes": 293,
+      "sha256": "0d4a60c6a4a477092ae03965ef6aaa7d8dd9e8cc3ce82819d71189c2da6dbad0"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/SurfaceCard.swift",
+      "bytes": 1296,
+      "sha256": "1b8b7e231fd1910b9b45d8aa873032107e22bc963df8b3728412ede23178b7b8"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/TrustSummaryCard.swift",
+      "bytes": 1798,
+      "sha256": "0170d14cda715e22df5107a0905cad0d04a50b707d5f365f7a6e30b46f88d399"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Components/UpcomingBillRowView.swift",
+      "bytes": 2262,
+      "sha256": "bfa72fce859c84da76e1323e390c8b957b64969413de50a2cca04fcef01aff95"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/History/HistoryView.swift",
+      "bytes": 15503,
+      "sha256": "dc5d2bdec9b2f801fa79fbe209dd4bdc64ac3dd03e4264fd2d726680040891ef"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Onboarding/OnboardingView.swift",
+      "bytes": 33082,
+      "sha256": "8a89ff5238a4b8d6dd3684582774b1d2644907b2948db53423c6828867715a28"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Payday/PaydaySheet.swift",
+      "bytes": 16530,
+      "sha256": "ecbf12ac99dcc8229709bcc634023c911bab86622fbb1549b29dda36e708d378"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Plan/AddBillView.swift",
+      "bytes": 5044,
+      "sha256": "6981240d198c8463d3f722bf02811716de451ec0bc873b6f6f05df91584b63d9"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Plan/BillDetailView.swift",
+      "bytes": 4965,
+      "sha256": "0c8a9d31f84b28c03d22e3df512a57f4f9a54730635bd6b031117f320baf91ef"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Plan/EditBillView.swift",
+      "bytes": 3376,
+      "sha256": "ce190447d68bcaba7f5ea93d2b9eaf9ac215a474f9c1dc7a9c97cc317ffe4af7"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Plan/PlanView.swift",
+      "bytes": 13697,
+      "sha256": "64e0f637ffa25426ccedca4b4bddf1842d156f0c6689763a64a2b1b1e73a4607"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Settings/AboutInfoView.swift",
+      "bytes": 4174,
+      "sha256": "2c66d480e5e21f231e167b930b8b2a69e47ab6534e165e97c727665cbc8c16f1"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Settings/DefaultAmountEditor.swift",
+      "bytes": 2992,
+      "sha256": "a5b1016af741a248b4635129b998d8448053c55d4fbc8bc77dab26594bcdb7e0"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Settings/SettingsView.swift",
+      "bytes": 12255,
+      "sha256": "7e68f5eaf995c12b645beddcf017075c61ee7e4593e2a6deb33923d6b49bc0d6"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Today/AddTransactionView.swift",
+      "bytes": 6169,
+      "sha256": "987f7fd3fce26cbc2fe340ad8cf4c4e4bb5a9759bb20ed18eac8e6d9d01fda53"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Today/MarkBillPaidView.swift",
+      "bytes": 4130,
+      "sha256": "f6d1674ac44a8062c06c578ee8084efb07d943077f8cd1ab8e17e884d0dd4b00"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Today/TodayView.swift",
+      "bytes": 10616,
+      "sha256": "e910ad1cf51b3d94553bb7785d998015655356f2fc3405e2890d54d8cbd9dbd0"
+    },
+    {
+      "path": "AppSources/UntilPayday/Views/Today/TodayViewState.swift",
+      "bytes": 884,
+      "sha256": "e1296fc434645244ceb12da61c42787cc83db0400ca0f6f7e3a9223425aecaad"
+    },
+    {
+      "path": "AppSources/UntilPaydayWidget/PaydayTimelineProvider.swift",
+      "bytes": 1628,
+      "sha256": "387bd86550229523a0a5277f7e91e5f8d11298aecae020fe82f911dada7d77c7"
+    },
+    {
+      "path": "AppSources/UntilPaydayWidget/PaydayWidgetView.swift",
+      "bytes": 9610,
+      "sha256": "38b8464d67e900675540762c8b082832d267e75874c54093d2be706ac798db5f"
+    },
+    {
+      "path": "AppSources/UntilPaydayWidget/PrivacyInfo.xcprivacy",
+      "bytes": 641,
+      "sha256": "28eafac0b45d6a639d193a4352f219cac1c42b27909ca6c21b947255c5275839"
+    },
+    {
+      "path": "AppSources/UntilPaydayWidget/UntilPaydayWidget.swift",
+      "bytes": 1093,
+      "sha256": "e09098a7cf0bdfde9eea459c05927efd6826771a139313add405990a623873df"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/AdFrequencyControllerTests.swift",
+      "bytes": 2617,
+      "sha256": "f18b84fe68779bede2ab9d816b858bc4327f5a5652d01ff5d1da2723ff7f885f"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/BillAccountingTests.swift",
+      "bytes": 7278,
+      "sha256": "84c50ea08dca603e953db3de1776abe9b95d8b1d7bc645fac83307529a74d35e"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/CycleManagerTests.swift",
+      "bytes": 3832,
+      "sha256": "cc0abd3ab96274fc8ce87934bd61a280aff1409ef29903c6441c2ebf1e240cdb"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/MoneyFormatterTests.swift",
+      "bytes": 1400,
+      "sha256": "7b7e6cc704563f325080ff285ec84ce239235f2b6225af5c5e5891b6aea8c1b5"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/TodayStateBuilderTests.swift",
+      "bytes": 4329,
+      "sha256": "d85cdb5b1499ddc7f1ee91633c16b8515be7b55e9362029b6f50c99c67ed608c"
+    },
+    {
+      "path": "AppTests/UntilPaydayTests/WidgetSnapshotTests.swift",
+      "bytes": 3657,
+      "sha256": "8bb91b70f2a9507de8855b05f4ce8040ccad53887e8d6641da81d90049c3378c"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/ExpenseFlowTests.swift",
+      "bytes": 1119,
+      "sha256": "1ccd5088db5442ee85600e4761ebf30eba79adb1505e51b2caf19339c40ecbe3"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/OnboardingSmokeTests.swift",
+      "bytes": 517,
+      "sha256": "073ea53819ebdb1a880142e99a6a9cd27b85e45e6ce0a3e4606cea54ebdd88e8"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/PaydayAndHistorySmokeTests.swift",
+      "bytes": 1011,
+      "sha256": "c0f523fa4a90602ed5f330f5c11161be4724224e196fe4a413d4a001d25707d5"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/VisualMasterNavigationTests.swift",
+      "bytes": 1544,
+      "sha256": "856aa9d0d879a4220b34cf98bf7987057a03f791510240070ceb498384cf5f13"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/VisualMasterScreenshotSmokeTests.swift",
+      "bytes": 2107,
+      "sha256": "1a1d67c292dbacebc9cc39b26da5b18ff328d42beb74390fd8dc906de6b19e11"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/ZZAppScreenshotTests.swift",
+      "bytes": 2128,
+      "sha256": "4031953b052f9a9f943888a2aa14f84c303c4b5f0e05d24bd27be32282cd6215"
+    },
+    {
+      "path": "AppTests/UntilPaydayUITests/ZZWidgetRuntimeTests.swift",
+      "bytes": 4650,
+      "sha256": "c016e7cc55bfa079d77e37ed094d597170f28f62a0e78cfbb1570314847ad30f"
+    },
+    {
+      "path": "CorePackage/Package.swift",
+      "bytes": 395,
+      "sha256": "b9625b6cfa565339249c34534a6c23d3aebcd3a5a5454cfe78252ee0964bf3ca"
+    },
+    {
+      "path": "CorePackage/Sources/UntilPaydayCore/BudgetEngine.swift",
+      "bytes": 2150,
+      "sha256": "ef3d973b97270d7e54bcbe9642ee0da830c35c5380281253a042fb2b7aca9a3b"
+    },
+    {
+      "path": "CorePackage/Sources/UntilPaydayCore/Domain.swift",
+      "bytes": 3452,
+      "sha256": "e1c8198dedccf67b50136d3cb68889e5234798a46d87ca2b7fc94ec3e65d8546"
+    },
+    {
+      "path": "CorePackage/Sources/UntilPaydayCore/MinorUnitMath.swift",
+      "bytes": 999,
+      "sha256": "096974687249c881ded85a215b2481300c37bfd693be36545dcb7969cd0ad085"
+    },
+    {
+      "path": "CorePackage/Sources/UntilPaydayCore/Money.swift",
+      "bytes": 1738,
+      "sha256": "303113072ef7c79b43c5a9349c958c272e6656c64e09a24f90a14509bd8cb62c"
+    },
+    {
+      "path": "CorePackage/Sources/UntilPaydayCore/PayScheduleEngine.swift",
+      "bytes": 9540,
+      "sha256": "f79727984ecc87ccc7346d2945993c214a9b991e10a6bf9c084914dfcfd9bd05"
+    },
+    {
+      "path": "CorePackage/Tests/UntilPaydayCoreTests/BudgetEngineTests.swift",
+      "bytes": 7521,
+      "sha256": "a2f099c7997cee6b531720156b95400413f67317503e48fd0441a4c483413dc0"
+    },
+    {
+      "path": "CorePackage/Tests/UntilPaydayCoreTests/MoneyTests.swift",
+      "bytes": 1131,
+      "sha256": "4d7d241a59c0b4a6cd19f1d6c2143e1cc762f27ab2a657152cafe5cc9e5cf474"
+    },
+    {
+      "path": "CorePackage/Tests/UntilPaydayCoreTests/PayScheduleEngineTests.swift",
+      "bytes": 8251,
+      "sha256": "4f4e456e33af9c29b60645077d76c8500e83f967b3ae89df65ea898bf5f730ac"
+    }
+  ]
+}

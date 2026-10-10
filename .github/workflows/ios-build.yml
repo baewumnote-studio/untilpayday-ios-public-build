@@ -1,0 +1,93 @@
+name: Native iOS compile, tests and widget
+run-name: Payday Left unsigned verification
+
+'on':
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: untilpayday-native-verification
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    if: github.repository == 'baewumnote-studio/untilpayday-ios-public-build' && github.ref == 'refs/heads/main' && !github.event.repository.private && github.actor == 'baewumnote-studio'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12'
+      - name: Verify original source and assembled targets
+        run: |
+          python3 -m pip install -r Build/requirements.txt
+          python3 Build/verify_source.py
+          python3 Scripts/verify_xcode_assembly.py
+          python3 -m unittest discover -s Build -p 'test_*.py'
+      - uses: swift-actions/setup-swift@364295d9c23900ce04d4e5cc708387921b4e50f9 # v3
+        with:
+          swift-version: '6.4.0'
+      - name: Complete original native handoff checks before iOS SDK compilation
+        run: |
+          set -euo pipefail
+          mkdir -p AssemblyVerification/preflight
+          bash Scripts/verify_handoff.sh 2>&1 | tee AssemblyVerification/preflight/handoff.log
+      - name: Save native preflight evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: native-preflight
+          path: AssemblyVerification/preflight/*.log
+          retention-days: 7
+          if-no-files-found: ignore
+
+  ios:
+    needs: preflight
+    runs-on: xcode-27
+    timeout-minutes: 45
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.0.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12'
+      - name: Verify SDK, source and Swift packages
+        run: |
+          set -euo pipefail
+          python3 -m pip install -r Build/requirements.txt
+          test "$(xcodebuild -version | head -n 1)" = 'Xcode 27.0'
+          python3 Build/verify_source.py
+          mkdir -p AssemblyVerification/ios
+          xcodebuild -resolvePackageDependencies -project UntilPayday.xcodeproj -scheme UntilPayday -clonedSourcePackagesDirPath AssemblyVerification/ios/SourcePackages 2>&1 | tee AssemblyVerification/ios/spm-release.log
+      - name: Compile unsigned iPhone Release and embedded widget
+        run: |
+          set -euo pipefail
+          xcodebuild -project UntilPayday.xcodeproj -scheme UntilPayday -configuration Release -destination 'generic/platform=iOS' -derivedDataPath AssemblyVerification/ios/ReleaseDerivedData -clonedSourcePackagesDirPath AssemblyVerification/ios/SourcePackages CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build 2>&1 | tee AssemblyVerification/ios/release-build.log
+          test -d AssemblyVerification/ios/ReleaseDerivedData/Build/Products/Release-iphoneos/UntilPayday.app/PlugIns/UntilPaydayWidget.appex
+      - name: Run existing Unit and UI tests, launch Simulator and exercise Home widget
+        run: bash Scripts/verify_ios_on_macos.sh
+      - name: Save unsigned test results and synthetic Simulator captures
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: native-ios-verification
+          path: |
+            AssemblyVerification/ios/*.log
+            AssemblyVerification/ios/*-summary.json
+            AssemblyVerification/ios/*-version.log
+            AssemblyVerification/ios/selected-simulator.json
+            AssemblyVerification/ios/*entitlements.plist
+            AssemblyVerification/ios/*xcresult.zip
+            AssemblyVerification/ios/UIAttachments.zip
+            AssemblyVerification/ios/simulator-launch.png
+          retention-days: 7
+          if-no-files-found: warn
+
